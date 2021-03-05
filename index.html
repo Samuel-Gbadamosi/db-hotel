@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Db hotel</title>
+  </head>
+  <body>
+    <ol>
+      <li>Seleziona tutti gli ospiti che sono stati identificati con la carta di identità ?</li>
+
+      <p>Anwer : SELECT *
+          FROM `ospiti` 
+          WHERE `document_type` = 'CI’</p>
+
+      <li>Seleziona tutti gli ospiti che sono nati dopo il 1988?</li>
+
+      <p> Answer : SELECT * 
+         FROM `ospiti`
+         WHERE `date_of_birth` > '1988-05-23'</p>
+
+      <li>Seleziona tutti gli ospiti che hanno più di 20 anni (al momento dell'esecuzione della query).</li>
+      <li>Seleziona tutti gli ospiti il cui nome inizia con la D.</li>
+
+      <p> Answer : SELECT *
+         FROM `ospiti` 
+         WHERE `name` LIKE 'D%'</p>
+
+      <li>Calcolare il totale degli ospiti paganti.</li>
+
+      <p>Answer : SELECT * 
+          FROM `pagamenti` 
+          WHERE `status` = 'accepted'</p>
+      <li>Qual è il prezzo massimo pagato?</li>
+      
+      <li>Seleziona gli ospiti riconosciuti con patente e nati nel 1975.</li>
+      <li>Quanti posti letto ha l'hotel in totale?</li>
+    </ol>
+
+
+
+  </body>
+</html>
