@@ -36,6 +36,9 @@
           WHERE `status` = 'accepted' AND `price` >= 850</p>
 
       <li>Seleziona gli ospiti riconosciuti con patente e nati nel 1975.</li>
+        <p>SELECT *
+          FROM `ospiti`
+          WHERE YEAR(`date_of_birth`) = 1975 AND `document_type` = 'Driver License'</p>
       <li>Quanti posti letto ha l'hotel in totale?</li>
     </ol>
 
