@@ -31,7 +31,10 @@
           FROM `pagamenti` 
           WHERE `status` = 'accepted'</p>
       <li>Qual è il prezzo massimo pagato?</li>
-      
+      <p> Answer: SELECT *
+          FROM `pagamenti`
+          WHERE `status` = 'accepted' AND `price` >= 850</p>
+
       <li>Seleziona gli ospiti riconosciuti con patente e nati nel 1975.</li>
       <li>Quanti posti letto ha l'hotel in totale?</li>
     </ol>
