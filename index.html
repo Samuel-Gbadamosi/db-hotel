@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Db hotel</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <ol>
@@ -19,6 +20,9 @@
          WHERE `date_of_birth` > '1988-05-23'</p>
 
       <li>Seleziona tutti gli ospiti che hanno più di 20 anni (al momento dell'esecuzione della query).</li>
+      <p>Answer: SELECT *
+        FROM `ospiti`
+        WHERE `date_of_birth` > '1997'</p>
       <li>Seleziona tutti gli ospiti il cui nome inizia con la D.</li>
 
       <p> Answer : SELECT *
@@ -31,17 +35,22 @@
           FROM `pagamenti` 
           WHERE `status` = 'accepted'</p>
       <li>Qual è il prezzo massimo pagato?</li>
+
       <p> Answer: SELECT *
           FROM `pagamenti`
           WHERE `status` = 'accepted' AND `price` >= 850</p>
 
       <li>Seleziona gli ospiti riconosciuti con patente e nati nel 1975.</li>
-        <p>SELECT *
+
+        <p>Answer :SELECT *
           FROM `ospiti`
           WHERE YEAR(`date_of_birth`) = 1975 AND `document_type` = 'Driver License'</p>
+
       <li>Quanti posti letto ha l'hotel in totale?</li>
+
       <p>Answer : SELECT SUM(beds)
         FROM `stanze`</p>
+
     </ol>
 
 
