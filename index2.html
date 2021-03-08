@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    1)Conta gli ospiti raggruppandoli per anno dinascita ?
+
+    Answer : SELECT YEAR(`date_of_birth`)
+     AS 'BIRTH-YEAR' ,COUNT(`id`) AS 'TOTAL'
+     FROM `ospiti`
+     GROUP BY YEAR(`date_of_birth`)
+
+
+     2) Somma i prezzi dei pagamentiraggruppandoli per status.(In totale ci sono 3 righe)
+
+     Answer : SELECT SUM(price) AS `TOTAL`, `status`
+              FROM `pagamenti`
+              GROUP BY `status`
+
+      3)Conta quante volte è stata prenotataogni stanza
+
+      Answer :
+
+
+  </body>
+</html>
