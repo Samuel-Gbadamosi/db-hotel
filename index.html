@@ -15,9 +15,9 @@
 
       <li>Seleziona tutti gli ospiti che sono nati dopo il 1988?</li>
 
-      <p> Answer : SELECT * 
-         FROM `ospiti`
-         WHERE `date_of_birth` > '1988-05-23'</p>
+      <p> SELECT *
+        FROM `ospiti`
+        WHERE YEAR(`date_of_birth`) > '1988'</p>
 
       <li>Seleziona tutti gli ospiti che hanno più di 20 anni (al momento dell'esecuzione della query).</li>
       <p>Answer: SELECT *
@@ -36,9 +36,9 @@
           WHERE `status` = 'accepted'</p>
       <li>Qual è il prezzo massimo pagato?</li>
 
-      <p> Answer: SELECT *
-          FROM `pagamenti`
-          WHERE `status` = 'accepted' AND `price` >= 850</p>
+      <p> Answer: SELECT MAX(`price`) AS 'maximum_price'
+       FROM `pagamenti`</p>
+       <!-- correction -->
 
       <li>Seleziona gli ospiti riconosciuti con patente e nati nel 1975.</li>
 
